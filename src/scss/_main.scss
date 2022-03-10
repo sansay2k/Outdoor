@@ -1,0 +1,24 @@
+.section__main {
+    background: url(../img/main_bg.jpg) center (center / cover) no-repeat;
+    padding: 218px 0 227px 0;
+}
+
+.main {
+    &__subtitle {
+        color: $whiteColor;
+        max-width: 416px;
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    &__descr {
+        font-size: 17px;
+        line-height: 25px;
+        margin-top: 9px;
+        color: $lightColor;
+        max-width: 495px;
+        @media(max-width: 768px) {
+            max-width: 300px;
+        }
+    }
+}

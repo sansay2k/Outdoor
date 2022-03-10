@@ -1,0 +1,67 @@
+// Container
+.container {
+    max-width: 1200px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+// Body Locked
+body {
+    &.locked {
+        overflow: hidden;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.btn {
+    &__brown {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 10px 18px;
+        background-color: $brownColor;
+        color: $whiteColor;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        height: 44px;
+        transition: 0.3s all;
+        &:hover {
+            background-color: #302D20;
+        }
+    }
+}
+
+
+.title {
+    font-size: 14px;
+    line-height: 20px;
+    color: $orangeColor;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 36px;
+    line-height: 43px;
+    font-family: 'Roboto';
+    color: $brownColor;
+    margin-top: 8px;
+}
