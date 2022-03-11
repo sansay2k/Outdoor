@@ -758,6 +758,135 @@ nav {
   margin-left: 7px;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #575445;
+  padding: 100px 0;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 75px;
+  width: 100%;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  gap: 15px;
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 75px;
+}
+
+.footer__links_column {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E6B939;
+  gap: 10px;
+  max-width: 221px;
+  width: 100%;
+}
+
+.footer__links_column li {
+  margin-top: 9px;
+}
+
+.footer__links_column li a {
+  color: #ffffff;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  font-size: 13px;
+}
+
+.footer__links_column li a:hover {
+  color: #E6B939;
+}
+
+.footer__back_title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #E6B939;
+}
+
+.footer__back_descr {
+  font-size: 14px;
+  max-width: 438px;
+  width: 100%;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.footer__back_form {
+  margin-top: 9px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__back_input {
+  max-width: 458px;
+  width: 100%;
+  height: 53px;
+  padding: 17px 21px;
+  font-size: 14px;
+  color: black;
+  position: relative;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  z-index: 1;
+  padding-right: 120px;
+}
+
+.footer__back_input::-webkit-input-placeholder {
+  color: #444444;
+}
+
+.footer__back_input::-moz-placeholder {
+  color: #444444;
+}
+
+.footer__back_input:-ms-input-placeholder {
+  color: #444444;
+}
+
+.footer__back_input::-ms-input-placeholder {
+  color: #444444;
+}
+
+.footer__back_input::placeholder {
+  color: #444444;
+}
+
+.footer__back_input-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 2;
+}
+
 @media (max-width: 1233px) {
   .guides__title {
     text-align: center;
@@ -945,6 +1074,18 @@ nav {
 
   .menu__item-link {
     color: white;
+  }
+}
+
+@media (max-width: 980px) {
+  .footer__links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .footer__links_column {
+    max-width: 150px;
   }
 }
 
